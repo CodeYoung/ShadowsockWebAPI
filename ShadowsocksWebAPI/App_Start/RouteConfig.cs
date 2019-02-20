@@ -18,6 +18,14 @@ namespace ShadowsocksWebAPI
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            ////自定义路由：匹配到action
+            //routes.MapRoute(
+            //    name: "ActionApi",
+            //    url: "actionapi/{controller}/{action}/{id}",
+            //    defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+            //);
+
         }
     }
 }

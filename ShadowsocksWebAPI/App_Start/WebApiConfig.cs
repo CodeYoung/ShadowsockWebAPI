@@ -19,6 +19,12 @@ namespace ShadowsocksWebAPI
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+            //自定义路由：匹配到action
+            config.Routes.MapHttpRoute(
+                name: "ActionApi",
+                routeTemplate: "actionapi/{controller}/{action}/{id}",
+                defaults: new { id = RouteParameter.Optional }
+            );
         }
     }
 }
